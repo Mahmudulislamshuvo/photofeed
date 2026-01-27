@@ -4,7 +4,7 @@ import Link from "next/link";
 const PhotoCard = ({ photo }) => {
   return (
     <>
-      <Link href={`./${photo.id}`} className="group">
+      <Link href={`/photos/${photo.id}`} className="group">
         <Image src={photo.url} alt={photo.title} width={500} height={300} />
 
         {/* <!-- title --> */}
