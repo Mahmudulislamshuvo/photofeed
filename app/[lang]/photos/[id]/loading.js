@@ -1,4 +1,4 @@
-export default function Loading() {
+export default function loading() {
   return (
     <div className="container my-4 lg:my-8">
       <div className="grid grid-cols-12 gap-4 2xl:gap-10 animate-pulse">
@@ -44,8 +44,8 @@ export default function Loading() {
             </div>
             {/* Bio Skeleton */}
             <div className="space-y-2">
-                <div className="h-3 bg-gray-300 rounded-md w-full"></div>
-                <div className="h-3 bg-gray-300 rounded-md w-5/6"></div>
+              <div className="h-3 bg-gray-300 rounded-md w-full"></div>
+              <div className="h-3 bg-gray-300 rounded-md w-5/6"></div>
             </div>
           </div>
 
