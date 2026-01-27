@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const DetailsCard = ({ details }) => {
+const DetailsCard = ({ details, lang }) => {
   return (
     <>
       <div className="p-6 border rounded-xl col-span-12 lg:col-span-4  ">
