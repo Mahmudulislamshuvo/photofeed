@@ -12,6 +12,7 @@ https://github.com/user-attachments/assets/0d7d5614-492e-4336-ae60-017c1f5e9384
 
 *   **Browse Photos:** View a beautiful gallery of photos.
 *   **View Photo Details:** Click on a photo to see more details.
+*   **Modal Photo View:** Utilizes Next.js Intercepting Routes to show photo details in a modal, keeping the context of the gallery.
 *   **Internationalization:** Supports both English and Bengali languages.
 *   **Responsive Design:** Works seamlessly on all devices.
 
