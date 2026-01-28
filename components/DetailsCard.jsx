@@ -1,6 +1,11 @@
+import { getDictionary } from "@/app/[lang]/dictionaries";
 import Image from "next/image";
 
-const DetailsCard = ({ details, lang }) => {
+const DetailsCard = async ({ details, lang }) => {
+  const dictionary = await getDictionary(lang);
+
+  console.log(dictionary);
+
   return (
     <>
       <div className="p-6 border rounded-xl col-span-12 lg:col-span-4  ">
@@ -12,19 +17,19 @@ const DetailsCard = ({ details, lang }) => {
         <div className="space-y-2.5 text-black/80 text-xs lg:text-sm">
           {/* <!-- item start --> */}
           <div className="flex justify-between">
-            <span>Views</span>
+            <span>{dictionary.views}</span>
             <span className="font-bold">{details.views}</span>
           </div>
           {/* <!-- item ends --> */}
           {/* <!-- item start --> */}
           <div className="flex justify-between">
-            <span>Share</span>
+            <span>{dictionary.share}</span>
             <span className="font-bold">{details.share}</span>
           </div>
           {/* <!-- item ends --> */}
           {/* <!-- item start --> */}
           <div className="flex justify-between">
-            <span>Up loaded</span>
+            <span>{dictionary.uploaded}</span>
             <span className="font-bold">{details.uploaded}</span>
           </div>
           {/* <!-- item ends --> */}
@@ -47,7 +52,7 @@ const DetailsCard = ({ details, lang }) => {
               <div className="spacy-y-3">
                 <h6 className="lg:text-lg font-bold">{details.author.name}</h6>
                 <p className="text-black/60 text-xs lg:text-sm">
-                  {details.author.followers} Followers
+                  {details.author.followers} {dictionary.followers}
                 </p>
               </div>
             </div>
@@ -60,7 +65,7 @@ const DetailsCard = ({ details, lang }) => {
                 width={20}
                 className="w-5 h-5"
               />
-              Follow
+              {dictionary.follow}
             </button>
           </div>
           {/* <!-- author bio --> */}
@@ -90,7 +95,7 @@ const DetailsCard = ({ details, lang }) => {
                 width={20}
                 className="w-5 h-5"
               />
-              Save
+              {dictionary.save}
             </button>
             <button className="flex-1 border py-1.5 rounded text-xs lg:text-sm flex items-center justify-center text-center gap-1.5 font-bold hover:bg-yellow-400">
               <Image
@@ -100,7 +105,7 @@ const DetailsCard = ({ details, lang }) => {
                 width={20}
                 className="w-5 h-5"
               />
-              Share
+              {dictionary.share}
             </button>
           </div>
         </div>

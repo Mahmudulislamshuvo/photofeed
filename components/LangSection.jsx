@@ -7,12 +7,12 @@ const LangSection = () => {
       <button className="flex items-center gap-2">
         <Image
           className="max-w-8"
-          src="/bd.png"
+          src="/usa.png"
           alt="bangla"
           height={32}
           width={32}
         />
-        Bangla
+        English
       </button>
     </>
   );
