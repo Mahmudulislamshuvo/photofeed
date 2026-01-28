@@ -1,7 +1,5 @@
 # PhotoFeed
 
-![Project Logo](./public/lws_logo.png)
-
 A modern and beautiful web application for sharing and exploring photos. This project is built with Next.js and Tailwind CSS, featuring a clean and intuitive user interface.
 
 ## Live Demo
